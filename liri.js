@@ -23,7 +23,14 @@ for(var i = 3; i < lookUp.length; i++){
 	search = search + lookUp[i] + ' ';
 }
 
-if(input == 'my-tweets'){
+if(input == undefined){
+	console.log('\nRun node liri.js and add:\n');
+	console.log('my-tweets: too see some tweets from a dummy twitter account');
+	console.log('spotify-this-song + song name: to look up a song in spotify');
+	console.log('movie-this + movie name: to look up your movie in omdb');
+	console.log('do-what-it-says: to get a random song or movie');
+	console.log('\nEx. \nnode liri.js spotify-this-song spirit break out');
+}if(input == 'my-tweets'){
 	// console.log('working1');
 	tweets();
 }else if(input == 'spotify-this-song'){
@@ -81,7 +88,7 @@ function song(){
 
 		spotify.search({type: 'track', query: search }, function(err, data) {
     		if (err) {
-    			return console.log('Error occurred: ' + err);
+    			return console.log('Error occurred: ' + err + '\nCheck your spelling');
   			}
  	
  			console.log(' ');
