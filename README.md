@@ -1,5 +1,10 @@
 # Liri-Node-App
+
+### Overview
+
 Ask Liri and you shall receive!
+
+### Instructions
 
 Step 1:
 Run the file with node and add one of the following commands:
@@ -11,3 +16,10 @@ Run the file with node and add one of the following commands:
 
 Ex.
 node liri.js spotify this song spirit break out
+
+### Core Technology
+
+- node.js
+- Twitter API
+- Spotify API
+- OMDb API
